@@ -132,3 +132,43 @@ Estas clases van a interactuar entre si en nuestro programa, haciendo diferentes
 - Composición:
 	Una flecha con un rombo y relleno. Indica a los participantes de un grupo (? pero este grupo solo puede existir si tiene participantes.
 
+## Objects
+
+Los objects son elementos principales para OOP. Los objetos son aquellos que son sustantivos, y que principalmente en programación, tienen 
+propiedades y comportamientos o functions.
+
+Pueden ser tanto físicos cómo conceptuales. Cómo una manzana o una idea. Un usuario y una sesión.
+
+Las propiedades o variables de un objeto tambien pueden ser usados cómo sustantivos. Mientras que los comportamientos pueden ser 
+verbos o acciones. 
+
+## Classes & Abstraction
+
+Al momento de tener que hacer muchos objects, con varios metodos, vamos a tener que repetir mucho código si solo usamos los objetos.
+
+Para eso vamos a hacer una clase, la cual nos va a servir de plantilla, la cual contiene propiedades, atributos, variables y metodos, funciones o 
+acciones. Cuando usamos estas clases, nos va a dar un objeto. Pero para hacer una clase debemos hacer abstracción de los datos de un object.
+
+## Modularidad
+
+La modularidad de un programa consiste en dividir diferentes partes todo el programa, generalmente por cada proceso elemento. Esto nos permite:
+- Reutilizar código o módulos
+- Evitar Colapsos Masivos o de todo el programa
+- Mantener de una forma más sencilla el código
+- Tener una mayor legibilidad en el código
+- Incrementar la velocidad al resolver problemas
+
+Es buena practica dividir cada clase por un archivo, cómo en Java.
+
+## Herencia
+
+Cuando tengamos que hacer varias clases con tan leves variaciones entre sí, lo mejor va a ser uso de la herencia.
+Creando una clase a partir de otras clases, en donde se va a crear una Clase Padre y las clases hijos, haciendo esto apartir del concepto
+anterior de abstracción de clases. 
+
+La clase padre se le referenciara cómo SUPER Clase y a las clases hijos cómo sub clases.
+
+La Super Clase va a tener todas las propiedades & metodos que se tengan repetidos en las sub clases, y si necesitamos 
+unos propiedades o metodos especiales para cada sub clase, es valido crear una sub clase con esas propiedades y metodos.
+
+
