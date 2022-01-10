@@ -171,4 +171,9 @@ La clase padre se le referenciara cómo SUPER Clase y a las clases hijos cómo s
 La Super Clase va a tener todas las propiedades & metodos que se tengan repetidos en las sub clases, y si necesitamos 
 unos propiedades o metodos especiales para cada sub clase, es valido crear una sub clase con esas propiedades y metodos.
 
+## Constructor 
+
+El Constructor es el metodo que vamos a hacer cuando vamos a crear un objeto usando nuestras clases. Este construira a el 
+objeto con unos valores minimos, con los cuales van a ser lo minimo para funcionar o ser usados.
+
 
