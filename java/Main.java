@@ -1,6 +1,6 @@
 class Main {
     public static void main(String[] args) {
-        Car car_main = new Car(
+        UberVan car_main = new UberVan(
             16, 
             "MNF046", 
             new Driver(
@@ -10,9 +10,11 @@ class Main {
                 "@gmail",
                 "catdog" 
             ),
-            4
+            4, 
+            "hello",
+            "piel de perro"
         );
-
-        System.out.println("car's Plate: " + car_main.license + " Car's Driver: " + car_main.driver.name);
+    
+        System.out.println(car_main.getDriver().getName() + car_main.getLicense() + car_main.getId());
     }
 }

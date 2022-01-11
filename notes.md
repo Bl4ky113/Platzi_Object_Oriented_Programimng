@@ -176,4 +176,47 @@ unos propiedades o metodos especiales para cada sub clase, es valido crear una s
 El Constructor es el metodo que vamos a hacer cuando vamos a crear un objeto usando nuestras clases. Este construira a el 
 objeto con unos valores minimos, con los cuales van a ser lo minimo para funcionar o ser usados.
 
+## Encapsulamiento
 
+El encapsulamiento de datos, es hacer que ese dato sea inviolable, inalterable o esconder el atributo de la clase, evitando que se pongan datos 
+erroneos que puedan afectar la lógica, ejemplo un carro con -1 puestos disponibles.
+
+Para poder hacer uso del encapsulamiento vamos a tener que hacer uso de diferentes niveles de acceso, vistos anteriormente en los UML.
+
+- + Public
+	Poder ser accedido por cualquier clase
+- # Protected
+	Poder ser accedido a nivel de la clase, paquetes o Subclases si es una SUPER Clase
+- ~ Default
+	Poder ser accedido a nivel de la clase y paquetes, no se puede usar en la herencia o subclases
+- - Private
+	Poder ser acceido unicamente por la Clase
+
+Para hacer encapsulamiento vamos a usar el nivel de acceso private, para evitar que en cualquier parte del código se 
+pueda definir o obtener la variables encapsuladas.
+
+Pero para que estas variables no sean inservibles vamos a tener que hacer un sistema de Setters and Getters, el cual consiste en realizar
+diferentes metodos en la clase donde ella misma verifique o haga condicionales para hacer set o get de la variable encapsulada.
+
+## Polimorfismo
+
+Una vez teniendo varias Super Clases y Sub clases, vamos a tener gran número de familias. Algunas veces en nuestras sub clases 
+algunos metodos necesiten un diferentes procedimiento. Ejemplo de un aporte de Platzi:
+
+Tenemos una clase de transporte: 
+
+Transporte {}
+
+Y tenemos que usarla para hacer 3 sub clases, caballo, carro y avión. La Clase de transporte tiene dos metodos:
+
+Transporte {
+	avanzar () {}
+	frenar () {}
+}
+
+Caballo extends Transporte {}
+Carro extends Transporte {}
+Avión extends Transporte {}
+
+Será que ambos metodos van a funcionar en las subclases? No. Para eso hay que volver a definirlos o hacer una nueva forma del metodo, 
+que es de donde viene el nombre. Poli - varios, muchos. Morfismo - Formas.
