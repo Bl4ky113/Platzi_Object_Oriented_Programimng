@@ -1,5 +1,5 @@
 class Payment {
     constructor (id) {
-        self.id = id
+        this.id = id
     }
 }

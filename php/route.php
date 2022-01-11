@@ -1,13 +1,13 @@
 <?php
     class Route {
-        $id = Integer;
-        $start = [];
-        $end = [];
+        public $id;
+        public $start;
+        public $end;
 
         public function __construct ($id, $start, $end) {
-            $this -> id = $id;
-            $this -> start = $start;
-            $this -> end = $end;
+            $this->id = $id;
+            $this->start = $start;
+            $this->end = $end;
         }
     }
 ?>

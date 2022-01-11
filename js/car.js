@@ -1,8 +1,8 @@
 class Car {
     constructor (id, license, driver, passengers) {
-        self.id = id;
-        self.license = license;
-        self.driver = driver;
-        self.passengers = passengers;
+        this.id = id;
+        this.license = license;
+        this.driver = driver;
+        this.passengers = passengers;
     }
 }
