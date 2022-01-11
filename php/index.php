@@ -1,8 +1,9 @@
 <?php
     require_once("./driver.php");
-    require_once("./uberBasic.php");
+    require_once("./uberVan.php");
 
 
-    $uberX = new UberBasic(16, "ASD123", new Driver(16, "Martin", "1013", "@gmail", "pass"), 4, "Che", "Carro");
-    echo $uberX->driver->name;
+    $uberVan = new UberVan(16, "ASD123", new Driver(16, "Martin", "1013", "@gmail", "pass"), 6, "Che", "Carro");
+    echo ($uberVan->getDriver()->getName());
+    echo ($uberVan->getPassengers());
 ?>
