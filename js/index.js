@@ -1,4 +1,4 @@
-let car = new UberBasic(
+let car = new UberVan(
     16, 
     "ASD123", 
     new Driver(
@@ -8,9 +8,11 @@ let car = new UberBasic(
         "@gmail", 
         "pass"
     ), 
-    4, 
+    6, 
     "Carro Volador", 
     "Piel Perruna"
 );
 
-console.log(car.id)
+console.log(car.getId());
+console.log(car.getDriver().getName());
+console.log(car.getPassengers());
